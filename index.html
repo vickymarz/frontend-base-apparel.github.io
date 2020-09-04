@@ -1,1 +1,103 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend template</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="entire_body">
+        <div class="pre_header">
+            <div class="hidden" id="hide" style="display: none;" >
+                <nav >
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="border">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="top_nav" id="nav_bar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="border">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="icon_menu">
+                    <div class="icon"  >
+                        <i class="fa fa-bars fa-2x" style="color: white;" onmouseover="hover()"></i>
+                    </div>
+                    <div onclick="close()" style="display: none;">
+                        <i class="fa fa-times fa-2x" style="color: white;" ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <p>Landing</p>
+        </header>
+        <main>
+            <div class="clearfix">
+                <div class="box">
+                    <div class="container">
+                        <h1>Fly makes you faster</h1>
+                        <p>Now free template at <a href="#">uicookies.com.</a> for more templates visit the<a href="#"> site.</a> Lorem ipsum sit amet, consequentor adisplacin elit.</p>
+                        <button class="pricing"><a href="#"></a> see pricing</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="form_section">
+                        <p>Sign Up for Free</p>
+                        <form action="message.html" method="post">
+                            <input type="text" placeholder="Full name" required><br>
+                            <input type="email" name="email" id="email" placeholder="Email" reqiured><br>
+                            <input type="number" placeholder="Phone no" reqiured><br>
+                            <select name="select" id="select">
+                                <option value="name">Type</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Member">Member</option>
+                                <option value="Normal">Normal</option>
+                            </select>
+                            <input type="submit" value="Register" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
