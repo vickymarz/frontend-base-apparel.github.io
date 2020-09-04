@@ -1,0 +1,130 @@
+body{
+    width: 100%; max-width: 1000px; padding: 0px; margin-left: auto; margin-right: auto; min-height: 800px; 
+    background: linear-gradient(173deg, #763bee 80%,#ffffff 20% ); background-repeat: repeat-x;
+}
+header p{
+    font-size: 2rem; color: #ffffff;  position: relative; clear: left; margin-left: 10%;
+}
+/* navigation and icon styling starts here */
+.top_nav{
+    text-align: center;
+}
+nav ul li a{
+    font-size: 1.3rem; color: white; text-decoration: none; text-align: center;
+}
+nav ul li a:link{
+    color: white;
+}
+nav ul li a:hover{
+    color: blue
+}
+nav ul li{
+    display: inline-block; padding: 20px;
+}
+.top_nav .icon_menu .icon{
+    display: none; padding-right: 20px; cursor: pointer; 
+}
+.border{
+    border: 1px solid black; padding: 10px; border-radius: 5px;
+}
+/* navigation styling ends here */
+/* form section starts here */
+.form_section p{
+    font-size: 2rem; font-weight: lighter; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px 20px;
+}
+.form_section{
+    max-width: 500px; background-color: #ffffff; padding: 10px 5px; text-align: center; margin: auto; box-shadow:5px 5px 5px 5px #ffffff81, 5px 5px 5px 5px #000000 ; 
+    border-radius: 5px ;
+}
+.form_section form{
+    text-align: center; padding: 0px 20px 30px 20px; line-height: 3;
+}
+.form_section input{
+    line-height: 2.5; width: 90%; border:none;  border-radius: 3px; background-color: #e2dddd; padding: 0px 10px;
+}
+.form_section input:focus{
+    background-color: #000000; color: white;
+}
+select{
+    width: 100%; padding: 7px; ; background-color: #e2dddd; border: none; border-radius: 3px;
+}
+#submit{
+    text-align: center; width: 70%; padding: 0px; border-radius: 20px; background-color: blue; color: white; 
+    box-shadow: 2px 4px 5px rgb(87, 87, 231);
+}
+/* form section ends here */
+/* main content styling */
+.clearfix{
+    content: ""; clear: both; display: table; box-sizing: border-box;
+}
+.box{
+ max-width:400px; padding: 0px 50px; float: left;
+}
+.container{
+    padding-bottom: 40px;
+}
+.container h1{
+    color: white; font-weight: lighter; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; padding-left: 20px;
+     padding-right: 40px;
+}
+.container p{
+    color: white; font-size: 1.2rem; padding-left: 20px; padding-right: 40px;
+}
+p a{
+    color: #bebcbc; text-decoration: none;
+}
+p a:hover{
+    color: #6a5acd;
+}
+.pricing{
+    padding: 5px 20px; background-color: #04bb04; border-radius: 20px; color: #ffffff; box-shadow: 2px 2px 8px #ffffff; border: none; 
+    margin-left: 5%; cursor: pointer;
+}
+/* hidden side bar */
+.hidden{
+    position: fixed; top: 0; left: 0; z-index: 1; width: 20%;  min-height: 1vh; margin-top: -17px;
+}
+.hidden ul{
+    background-color: #000; color: white; padding:0px 10px;
+}
+.hidden ul li{
+    list-style: none; display: block; justify-content: space-around; border-bottom: 1px solid #4574d4;
+}
+.hidden ul li:hover{
+border-color: white;
+}
+.hidden ul li a{
+    font-size: 1rem; text-transform: uppercase; transition: 0.6s;
+}
+.hidden ul li a:hover{
+    color: #4574d4;
+}
+.hidden .border{
+    margin-left: -1rem;
+}
+/* media querries */
+@media screen and (max-width:850px){
+    .top_nav .icon_menu .icon{
+        display: block; float: right;
+    }
+    .top_nav nav{
+        display: none;
+    }
+    
+    .form_section{
+        position: relative; left: 12%;
+    }
+}
+@media screen and (max-width:750px){
+    .top_nav .responsive{
+        position: relative;
+    }
+    .top_nav .responsive .icon{
+        position: absolute; right: 0; top: 0;
+    }
+    .top_nav .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
