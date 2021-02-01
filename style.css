@@ -109,8 +109,8 @@ button:active {
 @media only screen and (min-width: 600px) {
   .container {
     display: grid;
-    height: 100vh;
-    grid-template-row: 100vh;
+    height: 100%;
+    grid-template-row: 100%;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "head hero" "section hero" "section hero";
   }
