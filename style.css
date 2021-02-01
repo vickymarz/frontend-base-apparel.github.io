@@ -57,6 +57,7 @@ section p {
 }
 section form {
   position: relative;
+  margin-bottom: 5rem;
 }
 section form input {
   border-radius: 10rem;
