@@ -110,6 +110,7 @@ button:active {
   .container {
     display: grid;
     height: 100vh;
+    grid-template-row: 100vh;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "head hero" "section hero" "section hero";
   }
