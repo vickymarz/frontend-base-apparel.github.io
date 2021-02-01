@@ -34,12 +34,12 @@ header {
 }
 
 section {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 section h1 {
   text-align: center;
   letter-spacing: 0.3rem;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #ce9797;
   padding-bottom: 2rem;
@@ -61,7 +61,7 @@ section form {
 section form input {
   border-radius: 10rem;
   padding: 0.8rem;
-  width: 90%;
+  width: 70%;
   outline: none;
   border: 0.1px solid #a99e9e;
   background-color: transparent;
@@ -118,7 +118,7 @@ button:active {
     grid-area: hero;
     background: url(hero-desktop.jpg) center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
   }
   .container header {
     grid-area: head;
