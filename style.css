@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "josefins-Regular";
+  src: url(../frontendmentor05/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "josefins-Light";
+  src: url(../frontendmentor05/Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+@font-face {
+  font-family: "josefins Semi-Bold";
+  src: url(../frontendmentor05/Josefin_Sans/static/JosefinSans-SemiBold.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Josefin-Regular;
+  background-image: linear-gradient(135deg, white, #fff5f5);
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1000;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../frontendmentor05/images/bg-pattern-desktop.svg);
+}
+
+header {
+  margin: 2rem 0;
+}
+
+.hero-mobile {
+  background: url(../frontendmentor05/images/hero-mobile.jpg) center no-repeat scroll;
+  background-size: 100%;
+  width: 100%;
+  height: 50vh;
+}
+
+section {
+  margin: 4rem 0;
+}
+section h1 {
+  text-align: center;
+  font-family: josefins-Light;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ce9797;
+  padding-bottom: 2rem;
+}
+section h1 span {
+  font-family: josefins Semi-Bold;
+  font-weight: 500;
+  color: black;
+}
+section p {
+  text-align: center;
+  line-height: 1.5;
+  color: #ce9797;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+section form {
+  position: relative;
+}
+section form input {
+  border-radius: 10rem;
+  padding: 0.8rem;
+  width: 90%;
+  outline: none;
+  border: 0.1px solid #a99e9e;
+  background-color: transparent;
+}
+section form button {
+  border-radius: 10rem;
+  width: 30%;
+  padding: 0.57rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #ce9797;
+  position: absolute;
+  right: 7%;
+  top: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+section form label {
+  color: #ee8c8c;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+section form .error {
+  position: absolute;
+  top: 7px;
+  right: 40%;
+}
+
+input::placeholder {
+  color: #ce9797;
+  padding-left: 1.1rem;
+}
+
+input:hover {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 2px #ce9797;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "head hero" "section hero" "section hero";
+  }
+  .container .hero-mobile {
+    grid-area: hero;
+    background: url(../frontendmentor05/images/hero-desktop.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .container header {
+    grid-area: head;
+  }
+  .container section {
+    grid-area: section;
+  }
+  .container .wrapper {
+    width: 60%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | Base Apparel coming soon page</title>
+		<!-- document title icon -->
+		<link
+			rel="shortcut icon"
+			href="../frontendmentor05/images/favicon-32x32.png"
+			type="image/png"
+		/>
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+		/>
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="../frontendmentor05/style.css" />
+		<!-- javascript -->
+		<script src="../frontendmentor05/index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="wrapper">
+					<img src="../frontendmentor05/images/logo.svg" alt="logo" />
+				</div>
+			</header>
+			<div class="hero-mobile"></div>
+			<section>
+				<div class="wrapper">
+					<h1>WE'RE <span>COMING SOON</span></h1>
+					<p>
+						Hello fellow shoppers! We're currently building our new fashion
+						store. Add your email below to stay up-to-date with announcements
+						and our launch deals.
+					</p>
+					<form onsubmit="return validation()">
+						<input type="text" placeholder="Email Address" id="email" onchange="return validateField()" />
+						<div id="error" style="display: none">
+							<img
+								src="../frontendmentor05/images/icon-error.svg"
+								alt="error-icon"
+								class="error"
+							/>
+						</div>
+						<button type="submit">
+							<img
+								src="../frontendmentor05/images/icon-arrow.svg"
+								alt="icon-arrow"
+							/></button
+						>
+						<label for="email" id="mail" style="display: none"
+							>Please provide a valid email</label
+						>
+					</form>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
